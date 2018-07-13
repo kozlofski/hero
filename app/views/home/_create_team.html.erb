@@ -1,0 +1,28 @@
+<div class="panel-body">
+    <div class="row">
+      <div class="col-md-4">
+        <%= form_tag home_team_path, :method => 'POST' do %>
+        <%= submit_tag 'Build your team', class: "btn btn-primary" %></br>
+        <%= select_tag(:team_number, options_for_select([
+          ['1', 1],
+          ['2', 2],
+          ['3', 3],
+          ]), class: 'form-control') %>
+        
+        
+        
+        <% end %>
+        
+      </div>
+      
+      <div class="col-md-4">
+        
+      </div>
+      
+      <div class="col-md-4">
+        
+      </div>
+      
+      
+    </div>
+  </div>

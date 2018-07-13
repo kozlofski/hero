@@ -1,0 +1,29 @@
+
+<% @team_number.times do %>
+
+    <div class="panel-body">
+      
+        <div class="row">
+          <div class="col-md-4">
+           <img src="<%= @avatar %>">
+          </div>
+          <div class="col-md-4">
+            <h4>
+              Superhero name:</br>
+              <span class='red'><%= @hero_prefix %> <%= @hero_name %></span>
+            </h4><br/>
+            
+            <h4>
+            Superhero power:</br>
+            <span class='corp_red'><%= @hero_power %></span>
+            </h4>
+          </div>
+        </div>
+        <div class='row'>
+            
+            <div class='col-md-12'><hr></div>
+        </div>
+        
+    </div>
+
+<% end %>
